@@ -15,8 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.TabLayoutFragment);
         tabLayout.addTab(tabLayout.newTab().setText("Orders"));
-        tabLayout.addTab(tabLayout.newTab().setText("Pending Orders"));
-        tabLayout.addTab(tabLayout.newTab().setText("Completed Orders"));
+        tabLayout.addTab(tabLayout.newTab().setText("Picked Orders"));
+        tabLayout.addTab(tabLayout.newTab().setText("Washed Orders"));
+        tabLayout.addTab(tabLayout.newTab().setText("Folded Orders"));
         tabLayout.addTab(tabLayout.newTab().setText("Delivered Orders"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 

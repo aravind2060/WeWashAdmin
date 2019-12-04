@@ -1,9 +1,10 @@
 package com.example.wewashadmin;
 
-import com.example.wewashadmin.FragmentThings.CompletedOrdersFragment;
 import com.example.wewashadmin.FragmentThings.DeliveredOrders;
+import com.example.wewashadmin.FragmentThings.FoldedOrders;
 import com.example.wewashadmin.FragmentThings.OrdersFragment;
-import com.example.wewashadmin.FragmentThings.PendingOrdersFragment;
+import com.example.wewashadmin.FragmentThings.PickedOrders;
+import com.example.wewashadmin.FragmentThings.WashedOrders;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -24,10 +25,12 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return new OrdersFragment();
             case 1:
-                return new PendingOrdersFragment();
+                return new PickedOrders();
             case 2:
-                return new CompletedOrdersFragment();
+                return new WashedOrders();
             case 3:
+                return new FoldedOrders();
+            case 4:
                 return new DeliveredOrders();
             default:
                 return null;

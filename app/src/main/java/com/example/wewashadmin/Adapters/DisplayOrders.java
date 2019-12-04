@@ -1,28 +1,27 @@
 package com.example.wewashadmin.Adapters;
 
-import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 public class DisplayOrders {
-    public String orderId, name,address,area,phone,date,Time,Clothes;
 
-    public DisplayOrders(String orderId, String name, String address, String area, String phone, String date, String time, String clothes) {
+
+    public String orderId, name,address,area,phone,dateBooked,expectedPickupTime,noOfClothes,status,key;
+    public Integer progress;
+
+
+
+    public DisplayOrders(String orderId, String name, String address, String area, String phone, String dateBooked, String expectedPickupTime, String noOfClothes, String status, Integer progress, String key) {
         this.orderId = orderId;
         this.name = name;
         this.address = address;
         this.area = area;
         this.phone = phone;
-        this.date = date;
-        this.Time = time;
-        this.Clothes = clothes;
+        this.dateBooked = dateBooked;
+        this.expectedPickupTime = expectedPickupTime;
+        this.noOfClothes = noOfClothes;
+        this.status = status;
+        this.progress = progress;
+        this.key = key;
     }
 
-    public DisplayOrders(){
-
-    }
 
     public String getOrderId() {
         return orderId;
@@ -64,30 +63,52 @@ public class DisplayOrders {
         this.phone = phone;
     }
 
-    public String getDate() {
-        return date;
+    public String getDateBooked() {
+        return dateBooked;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setDateBooked(String dateBooked) {
+        this.dateBooked = dateBooked;
     }
 
-    public String getTime() {
-        return Time;
+    public String getExpectedPickupTime() {
+        return expectedPickupTime;
     }
 
-    public void setTime(String time) {
-        this.Time = time;
+    public void setExpectedPickupTime(String expectedPickupTime) {
+        this.expectedPickupTime = expectedPickupTime;
     }
 
-    public String getClothes() {
-        return Clothes;
+    public String getNoOfClothes() {
+        return noOfClothes;
     }
 
-    public void setClothes(String clothes) {
-        this.Clothes = clothes;
+    public void setNoOfClothes(String noOfClothes) {
+        this.noOfClothes = noOfClothes;
     }
 
+    public String getStatus() {
+        return status;
+    }
 
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Integer getProgress() {
+        return progress;
+    }
+
+    public void setProgress(Integer progress) {
+        this.progress = progress;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
 }

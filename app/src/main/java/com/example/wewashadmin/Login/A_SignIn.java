@@ -15,7 +15,7 @@ import com.google.android.material.textfield.TextInputLayout;
 public class A_SignIn extends AppCompatActivity {
     TextInputEditText Email,Password;
     TextInputLayout Email1,Password1;
-    String email = "harrythalanki@gmail.com";
+    String email = "wewash@gmail.com";
     String pass = "Admin@1";
 
 
